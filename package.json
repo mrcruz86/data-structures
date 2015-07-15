@@ -1,0 +1,23 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Website displaying data-structures",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrcruz86/data-structures.git"
+  },
+  "author": "Jason Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrcruz86/data-structures/issues"
+  },
+  "homepage": "https://github.com/mrcruz86/data-structures",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.1"
+  }
+}
