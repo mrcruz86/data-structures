@@ -13,14 +13,19 @@
 		<div>
 			<h3>Animations</h3>
 			<ul>
-				<li ng-repeat="node in linkArray">{{ node }}</li>
+				<li ng-repeat="node in linkArray track by $index">{{ node }} <button ng-click="delete(node)">X</button></li>
 			</ul>
 		</div>
 		<div>
 			<h3>Various Functions</h3>
 			<form ng-submit="add()">
-				<input type="text" ng-model="newNode">
-				<button type="submit">Add</button>
+				<input type="text" ng-model="addEndNode">
+				<button type="submit">Add to end</button>
+			</form>
+
+			<form ng-submit="addToFront()">
+				<input type="text" ng-model="addBeginningNode">
+				<button type="submit">Add to beginning</button>
 			</form>
 		</div>
 	</div>
