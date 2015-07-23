@@ -27,6 +27,12 @@
 				<input type="text" ng-model="addBeginningNode">
 				<button type="submit">Add to beginning</button>
 			</form>
+
+			<form ng-submit="addAnywhere(beforeNode, nodeData)">
+				<input type="text" ng-model="beforeNode" placeholder="Before Node">
+				<input type="text" ng-model="nodeData" placeholder="Node Data">
+				<button type="submit">Add After</button>
+			</form>
 		</div>
 	</div>
 

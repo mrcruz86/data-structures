@@ -40,6 +40,11 @@ app.controller("linkedListCtrl", function($scope) {
 		}
 	}
 
+	$scope.addAnywhere = function(node, data) {
+		$scope.link.insertAfter(node, data);
+		$scope.linkArray = toArray();
+	}
+
 	$scope.delete = function(n) {
 		$scope.link.delete(n);
 		$scope.linkArray = toArray();
