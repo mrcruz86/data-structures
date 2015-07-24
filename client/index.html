@@ -29,7 +29,7 @@
 			</form>
 
 			<form ng-submit="addAnywhere(beforeNode, nodeData)">
-				<input type="text" ng-model="beforeNode" placeholder="Before Node">
+				<select ng-options="node for node in linkArray" ng-model="beforeNode"></select>
 				<input type="text" ng-model="nodeData" placeholder="Node Data">
 				<button type="submit">Add After</button>
 			</form>
